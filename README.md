@@ -23,16 +23,16 @@ Git
 ### How-To
 
 Fork this repository and clone it to your local environment. [USE Master branch only] \
-\
+
 
 Install firebase cli and login with the credentials provided. [YOU MUST HAVE PERMISSIONS TO DO THIS] \
-\
+
 
 Make any changes to any files as you like. \
-\
+
 
 Use git to add, commit, and push changes to the new site. [Use appropriate message while committing] \
-\
+
 
 Use firebase deploy command to upload the latest site.
 
