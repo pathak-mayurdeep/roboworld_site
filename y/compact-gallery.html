@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width,height=device-height,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Compact Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="compact-gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <style>
+        .aver{
+  background-color:#4B515D;
+font-size: medium;
+  color:white
+}
+.hmn{
+  background-color: #263238;
+}
+
+           .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+        .hei{
+            text-align: center;
+            background-color: aquamarine;
+            text-decoration: wavy;
+            font-weight: 400;
+            font-family: Georgia;
+        }
+        .ab{
+            height:800px;
+            width:533px;
+        }
+    .image{
+        height:300px!important;
+            width:400px!important;
+    }
+    .lightbox{
+        height:100%!important;
+            width:100%!important;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          
+            <img src="download.jpg" width="50" height="50" class="d-inline-block align-center" alt="logo">
+            <span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span>
+         
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white p-2 hvr-underline-from-center" href="index.html"><i class="fas fa-home "></i> HOME </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white p-2 hvr-underline-from-center" href="tutorial.html"><i class="fas fa-graduation-cap"></i> TUTORIAL</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="foundation.html"><i class="fas fa-history"></i> History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="compact-gallery.html"><i class="fas fa-picture-o"></i> IMAGE GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="alumni.html"><i class="fas fa-users"></i> Alumni</a>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <br>
+      <br>
+    <section class="gallery-block compact-gallery">
+        <div class="container text-center">
+            <nav>
+                <div class="nav-wrapper pb-5">
+                  <h1 class="display-4 hei ">IMAGE GALLERY</h1>
+                </div>
+              </nav>
+                    
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover ">
+                    <a class="lightbox ab " href="img/rsz_techniche_18.jpg"> 
+                        <img class="img-fluid image " src="img/rsz_techniche_18.jpg">
+                        <span class="description">
+                            <span class="description-heading">Techniche</span>
+                            <span class="description-body">participated in the glydo rama competition organised by  iit Guwahati</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover ">
+                    <a class="lightbox ab" href="img/rsz_techniche_19.jpg">
+                        <img class="img-fluid image" src="img/rsz_techniche_19.jpg">
+                        <span class="description">
+                            <span class="description-heading">Technice 2019 moments</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover ">
+                    <a class="lightbox ab" href="img/rsz_techfest.jpg">
+                        <img class="img-fluid image " src="img/rsz_techfest.jpg">
+                        <span class="description">
+                            <span class="description-heading">IIt bombay techfest winning moments</span>
+                           
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/HACKINGWRKSHP02.jpg">
+                        <img class="img-fluid image" src="img/HACKINGWRKSHP02.jpg">
+                        <span class="description">
+                            <span class="description-heading">Hacking Workshop</span>
+                            <span class="description-body">hacking Workshop organised by Jec ROBOWORLD , 2011</span>
+                        </span>
+                        </a>
+                    </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/astu hackathon.jpg">
+                        <img class="img-fluid image" src="img/astu hackathon.jpg">
+                        <span class="description">
+                            <span class="description-heading">astu hackathon,2019</span>
+                          
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG_20180317_175919.jpg">
+                        <img class="img-fluid image" src="img/IMG_20180317_175919.jpg">
+                        <span class="description">
+                            <span class="description-heading">Technospere moments ,2018</span>
+                          
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG_20200130_000124.jpg">
+                        <img class="img-fluid image" src="img/IMG_20200130_000124.jpg">
+                        <span class="description">
+                            <span class="description-heading">Robo War Technovus</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG_20191025_191403 (1).jpg">
+                        <img class="img-fluid image" src="img/IMG_20191025_191403 (1).jpg">
+                        <span class="description">
+                            <span class="description-heading">Robo War</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG20191102212234.jpg">
+                        <img class="img-fluid image" src="img/IMG20191102212234.jpg">
+                        <span class="description">
+                            <span class="description-heading">Technovus moments</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG-20191102-WA0009.jpg">
+                        <img class="img-fluid image" src="img/IMG-20191102-WA0009.jpg">
+                        <span class="description">
+                            <span class="description-heading">Technovus moments RoboNox</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG-20191108-WA0002.jpg">
+                        <img class="img-fluid image" src="img/IMG-20191108-WA0002.jpg">
+                        <span class="description">
+                            <span class="description-heading">Technovus moments RoboSoccer</span>
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <a class="lightbox" href="img/IMG_20190202_084048.jpg">
+                        <img class="img-fluid image" src="img/IMG_20190202_084048.jpg">
+                        <span class="description">
+                            <span class="description-heading">ASME HPVC competition Vellor</span>
+                            
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.compact-gallery', { animation: 'slideIn'});
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer class="page-footer font-small sda pt-4 ft">
+<div class="footer-copyright text-center py-3 aver hmn">© 2020 Copyright:
+    <a class="aver" href="https://mdbootstrap.com/"></a> Made by TEAM ROBOWORLD <large><i class="fas fa-heart "></i></large></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</html>

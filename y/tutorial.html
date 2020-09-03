@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content=" width=device-width,height=device-height,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="compact-gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+     /* Style the tab */
+     .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding-left: 5%;
+}
+.hello{
+        background-color:white;
+     
+     
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      }
+body{
+
+  width:100%;
+     height:100%;
+     overflow-x: hidden;
+     min-height: 100vh;
+     min-height: -webkit-fill-available;
+     background-color: #eceff1 ;
+}
+
+/*Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}  
+.aye{
+  background-color: white;
+}
+.ase{
+  
+  font-weight: 800;
+  text-align: justify;
+
+  
+}
+.as{
+background-color: aqua;
+padding: 1%;
+}
+.ac{
+  font-weight: 400;
+  font-family: Georgia;
+  
+}
+.ae{
+  font-weight: 300;
+  font-family: Georgia;
+}
+.ab{
+  font-family: 'Open Sans', sans-serif;
+}
+.az{
+  border: 2% black-top;
+  background-color: #4db6ac;
+  color: black;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .az{
+  border: none;
+  background-color: #4db6ac;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+.ac{
+  font-weight: 400;
+  font-family: Georgia;
+  font-size: 50px;
+}
+.axe{
+  background-color: aliceblue;
+  color: #000000;
+  margin: 10%;
+  
+  
+}
+}
+
+.ft{
+  font-family: 'Open Sans', sans-serif!important;
+}
+.abe:hover{
+  background-color: goldenrod!important;
+  color:black!important;
+  border-radius: 12%;
+}
+.axe{
+  background-color: aliceblue;
+  color: #000000;
+  
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          
+            <img src="download.jpg" width="50" height="50" class="d-inline-block align-center" alt="logo">
+            <span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span>
+         
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white p-2 hvr-underline-from-center" href="index.html"><i class="fas fa-home "></i> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2 hvr-underline-from-center" href="tutorial.html"><i class="fas fa-graduation-cap"></i> TUTORIAL<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="foundation.html"><i class="fas fa-history"></i> History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="compact-gallery.html"><i class="fas fa-picture-o"></i> IMAGE GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="alumni.html"><i class="fas fa-users"></i> Alumni</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div class="text-center pt-5 uppercase">
+        <h1 class="display-3 ac ">Tutorial</h1>
+      </div>
+      <div class="row pb-3 pl-1">
+        <div class="col-sm-6">
+          <div class="card text-center ">
+            <div class="card-body hello">
+              <h5 class="card-title as">Arduino Programming</h5>
+              <p class="card-text ab">the Arduino language is merely a set of C/C++ functions that can be called from your code. Your sketch undergoes minor changes (e.g. automatic generation of function prototypes) and then is passed directly to a C/C++ compiler (avr-g++).</p>
+              <a href="https://www.arduino.cc/en/Tutorial/HomePage" target="_blank" class="btn btn-primary mb-4">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Chassis</h5>
+              <p class="card-text ab">At the most basic level, the chassis of an automobile consists of only the frame. ... As well as act as the frame onto which all of the vehicle's parts are attached, it also provides invaluable structural integrity which prevents the car from collapsing into itself under large amounts of strain.</p>
+              <a href="https://randomnerdtutorials.com/build-robot-car-chassis-kit-arduino/" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-3 pl-1">
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Batteries</h5>
+              <p class="card-text ab">There are many different types of batteries available on the market . Choosing the right battery is essential in a robotics Project</p>
+              <a href="https://medium.com/husarion-blog/batteries-choose-the-right-power-source-for-your-robot-5417a3ec19ca" target="_blank" class="btn btn-primary mb-5">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 ">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Gears</h5>
+              <p class="card-text ab">Gears are mechanical parts with cut teeth designed to mesh with teeth on another part so as to transmit or receive force and motion. The cut teeth are also sometimes called cogs. ... In Robotics Gears are used to transfer rotational forces between axles. They can change speed and direction.</p>
+              <a href="https://khkgears.net/new/gear_knowledge/introduction_to_gears/types_of_gears.html" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-3 pl-1">
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Basic-Electronics-Skills-for-Robotics</h5>
+              <p class="card-text ab">
+                This robotics guide deals with the very basics of electronics required for developing robotics systems</p>
+              <a href="https://www.instructables.com/lesson/Basic-Electronics-Skills-for-Robotics/" target="_blank" class="btn btn-primary mb-4">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 ">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Motors</h5>
+              <p class="card-text ab">There are many types of motors are available in today's market, but mostly Tiny pager motors, servo motors, linear motors, stepper motors and DC geared motors are used in industrial robots according to their application area.</p>
+              <a href="https://www.electrocraft.com/motors-for/robotics/" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-3 pl-1">
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-body hello">
+              <h5 class="card-title as">Raspberry Pi Programming</h5>
+              <p class="card-text ab">The advantages of virtual memory abstraction and the ability to abstract hardware to their core functions make Raspberry Pi a desirable addition to the ingredients that make a great robotics project.</p>
+              <a href="https://www.raspberrypi.org/documentation/usage/python/" target="_blank" class="btn btn-primary mb-4">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-body  hello">
+              <h5 class="card-title as">AVR Programming</h5>
+              <p class="card-text ab">The AVR microcontroller is excellent with C code because it was designed with C in mind. Atmel have also made it easy to use C in AVR Studio, as WinAVR compiler can run from within AVRStudio just like the assembler. ... There are a few settings to be aware of in the compiler that you should set</p>
+              <a href="https://microcontrollerslab.com/avr-microcontroller-tutorials/" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+<div class="container">
+  <div class="row my-5">
+    <div class="col-md-12 text-center">
+      <h1 class=" display-3 ac">You Tube channel</h1>
+      <p>This two You tube channel is run by our club Members Jinmoy Jit talukdar And Bishal Das </p>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-around align-items-center">
+  <div class="col-md-5 mb-3">
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/RHD7jIt7ErU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-5 axe">
+<h3 class="font-weight-bold text-center">Channel Owner : Jinmoy Jit Talukder</h3>
+<h5 class="text-center">Mechanical Branch</h5>
+<h5 class="text-center">Channel Name : ROADSIDE ENGINEER</h5>
+<a href="https://www.youtube.com/channel/UCedsch2TZ-VqASA-QxyQlCg" target="_blank"><h6 class="text-center">Go to the Channel</h6></a>
+  </div>
+</div>  
+<br> 
+<div class="row justify-content-around flex-md-row-reverse align-items-center">
+  <div class="col-md-5 mb-3">
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/c194U0Jm7Ws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-5 axe">
+    <h3 class="font-weight-bold text-center">Channel Owner : Bishal Das</h3>
+    <h5 class="text-center">Electrical Branch</p>
+<h5 class="text-center">Channel Name : THE AD&TEC</h5>
+<a href="https://www.youtube.com/channel/UCl2mhcgnPQFgaE0Lzu53ifQ" target="_blank"><h6 class="text-center">Go to the Channel</h6></a>
+  </div>
+</div>
+
+
+  
+      
+<div class="container mt-5 mb-5 ">
+      <h2 class="text-center display-3 ac">SOFTWARE</h2>
+<p class="text-center ae">Some Of The Robotics Software For Boost Your Robotics Skills ,Click On Below</p>
+
+<div class="tab ase d-flex justify-content-around bg-dark shadow-lg border border-danger hello ">
+  <button class="tablinks abe text-white  " onclick="openCity(event, 'London')">Design</button>
+  <button class="tablinks abe text-white " onclick="openCity(event, 'Paris')">Simulation</button>
+  <button class="tablinks abe  text-white " onclick="openCity(event, 'Tokyo')">Advanced</button>
+</div>
+
+<div id="London" class="tabcontent text-center aye">
+  <h3>Softwares for Design Purposes</h3>
+<h4 class="p-3 ">Catia   ,  Atuocad     ,      Solidworks   ,  Fritzing(Circuit Design)   ,   Fusion 360</h4>
+</div>
+
+<div id="Paris" class="tabcontent text-center aye">
+  <h3>Softwares for Simulation Purposes:-</h3>
+  <h4 class="p-3 ">Ansys,  Creo  , Comsol Multiphysics</h4>
+</div>
+
+<div id="Tokyo" class="tabcontent text-center aye">
+  <h3>Some Advanced Softwares</h3>
+  <h4 class="p-3 "> MATLAB   ,  Robot Operating System(ROS)</h4>
+</div>
+</div>
+<br>
+
+  <div class="card mx-auto az ">
+    <div class="card-body text-center">
+      <h2 class="card-title ">Some Of Website You Can Buy Robotics Parts</h2>
+      <h4 class="card-text">Amazon , Flipkart , Robomart , Robokits , Robu , Ebay</h4>
+      
+    </div>
+  </div>
+
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+        
