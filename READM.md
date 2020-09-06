@@ -10,7 +10,7 @@ You must have permission to access the deployement servers.
 
 Note to all contributor :- Please push your changes to this branch if you made any changes to the original site. 
 
-For any discussion, create an issue on github or contact me (mayurdeep) directly.
+For any discussion, create an issue on github or contact me (balarka) directly.
 
 ### Prerequisites
 
@@ -55,9 +55,9 @@ All files are deployed on Firebase
 
 ## Authors
 
-* **Mayurdeep Pathak- *Initial work* - [mayurdeep](https://github.com/pathak-mayurdeep)
+* **Balarka goswami- *Initial work* - [balarka](https://github.com/balarka135)
 
-See also the list of [contributors](https://jecroboworld.in/about_us/dev_team.html) who participated in this project.
+
 
 ## License
 
