@@ -1,0 +1,131 @@
+
+#section3 h1{
+  font-family: 'roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color:black;
+}
+#section3 .event_name {
+  font-family: 'roboto',sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:black;
+}
+#section3 .description {
+  font-family: 'roboto',sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color:gray;
+}
+#section3 .award {
+  font-family: 'roboto',sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color:gray;
+}
+
+
+/*  Laptop screens */
+@media screen and (min-width: 601px) {
+  #section3{
+    height:1000px;
+  }
+  #section3 h1{
+    margin-top:5vh;
+    text-align: left;
+  }
+  .achievements {
+    position: absolute;
+    left:0;
+    right:40%;
+    height:100%;
+    padding:40px;
+  }
+  .our_events{
+    position: absolute;
+    left: 60%;
+    right:0;
+    height: 100%;
+  }
+  .our_events_padding{
+    padding:40px;
+  }
+  .our_events .border_line{
+    display:block;
+      float:left;
+      border:none;
+
+      height:100%;
+      width:1px;
+      background:black;
+      background-image: -webkit-linear-gradient(white, #858687, white);
+  }
+  .our_events .event_wrap{
+    float:left;
+    position: relative;
+    height:100%;
+    width: calc(100% - 1px);
+  }
+  .our_events ul{
+    text-align: left;
+    padding:20px 20px 20px 0px;
+  }
+  .our_events li{
+    padding:15px 20px 15px 0px;
+  }
+  #section3 .pg_1, #section3 .pg_2 {
+    position:relative;
+    float:left;
+    width:50%;
+  }
+  #section3 .pg_1 ul, #section3 .pg_2 ul{
+    padding:20px 20px 20px 0px;
+    text-align: left;
+  }
+  #section3 .pg_1 li, #section3 .pg_2 li{
+    padding:15px 20px 15px 0px;
+  }
+}
+/* mobile screens */
+@media screen and (max-width: 601px) {
+  #section3 {
+    height:auto;
+  }
+  #section3 h1{
+    margin-top:12vh;
+    text-align: left;
+    padding-left:40px;
+  }
+  .our_events .border_line{
+    display: block;
+    border: none;
+    width:100%;
+    height:1px;
+    background-image: -webkit-radial-gradient(circle, #858687, white);
+  }
+  .achievements {
+    position: relative;
+    left:0;
+
+    height:auto;
+  }
+  .our_events{
+    position: relative;
+    right:0;
+    height: auto;
+  }
+  .our_events ul{
+    text-align: left;
+    padding:20px 20px 20px 20px;
+  }
+  .our_events li{
+    padding:15px 20px 15px 20px;
+  }
+  .achievements ul{
+    text-align: left;
+    padding:20px 20px 20px 20px;
+  }
+  .achievements li{
+    padding:15px 20px 15px 20px;
+  }
+}

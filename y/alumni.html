@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Club Alumni!</title>
+    <style>
+     
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #0a0a0a !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+    </style>
+  </head>
+  <body>
+<!------ Include the above in your HEAD tag ---------->
+ <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        
+          <img src="download.jpg" width="50" height="50" class="d-inline-block align-center" alt="logo">
+         <span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span>
+       
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pl-2 pr-2">
+          <li class="nav-item active">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="index.html"><i class="fas fa-home "></i> HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="tutorial.html"><i class="fas fa-graduation-cap"></i> TUTORIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="foundation.html"><i class="fas fa-history"></i> History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="compact-gallery.html"><i class="fas fa-picture-o"></i> IMAGE GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="alumni.html"><i class="fas fa-users"></i> Alumni</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1 pt-4">Alumnini Members </h5>
+       
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/pinku das.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Priyam Pratim Das</h4>
+                                    <p class="card-text">Excutive Engineer (Production) at ONGC LTD</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text"> Branch : Mechanical Engineering ( 2007 - 2011 ) </p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:das_priyam@ongc.co.in">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9435716827">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/RUBUL KALITA.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Rubul Kalita</h4>
+                                    <p class="card-text">Air Field Ground lightning Specialist at Tata Power Strategic Enginerring Division  </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2007 - 2011)</p>
+                                    
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:rubulkjec07@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9707413739">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/Mohi Uddin.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Mohi Uddin Tapadar</h4>
+                                    <p class="card-text"> Worked in the hydro power generation. </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2007 - 2011)</p>
+                                    <ul class="list-inline">
+                                       
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:mohiuddin06@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9101128077">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/Samarjyoti Deka.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Samarjyoti Deka</h4>
+                                    <p class="card-text">Deputy Manager at Ashok Leyland Ltd</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Mechanical Engineering ( 2007 - 2011 )</p>
+                                    <ul class="list-inline">
+                                       
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:sammech41@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9706088909">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/Dipti Paul.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Dipti Paul</h4>
+                                    <p class="card-text">Manager at Hindustan Petroleum Corporation Limited</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2007 - 2011)</p>
+                                    <ul class="list-inline">
+                                      
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:diptipaul25@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9437157041">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/Sevika Sarmah.jpg" alt="card image"></p>
+                                    <h4 class="card-title ">Sevika Sarmah</h4>
+                                    <p class="card-text">EXECUTIVE ENGINEER  AT ONGC LTD</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Mechanical Engineering ( 2007 - 2011 )</p>
+                                    <ul class="list-inline">
+                                       
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:sevika.sarmah@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:9435716807">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                  <div class="mainflip">
+                      <div class="frontside">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <p><img class=" img-fluid" src="alumni/Monjit.jpg" alt="card image"></p>
+                                  <h4 class="card-title">Monojit Goswami</h4>
+                                  <p class="card-text"> working in BMS system (Battery management system)
+                                    And CAN communication (intra vehicle community)</p>
+                                  <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="backside">
+                          <div class="card">
+                              <div class="card-body text-center mt-4">
+                                  <h4 class="card-title">Profile</h4>
+                                  <p class="card-text">Branch : Electrical Engineering ( 2007 - 2011)</p>
+                                  <ul class="list-inline">
+                                     
+                                      <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="mailto:coolmonjit@gmail.com">
+                                              <i class="fa fa-envelope"></i>
+                                          </a>
+                                      </li>
+                                      <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                              <i class="fa fa-phone"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="alumni/Zeenat Hazarika.jpeg" alt="card image"></p>
+                                <h4 class="card-title"> Zeenat Hazarika </h4>
+                                <p class="card-text">Software Developer/Assistant Manage in Genpact digital-Analytics and Research</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Profile</h4>
+                                <p class="card-text"> Branch: Computer Science & Engineering (2007 - 2011 )</p>
+                                <ul class="list-inline">
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="mailto:zeenathazarika@outlook.com">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="tel:8867172976">
+                                            <i class="fa fa-phone"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="alumni/SHEKHAR LIMBU.jpg" alt="card image"></p>
+                                <h4 class="card-title"> Shekhar Limbu </h4>
+                                <p class="card-text">Currently working in TCS</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Profile</h4>
+                                <p class="card-text"> Branch: Computer Science & Engineering (2007 - 2011 )</p>
+                                <ul class="list-inline">
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-phone"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="alumni/rupam_sarmah_2011.jpeg" alt="card image"></p>
+                                <h4 class="card-title"> Rupam Sarmah </h4>
+                                <p class="card-text">Currently working in CAPGEMINI</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Profile</h4>
+                                <p class="card-text"> Branch:  Civil  Engineering ( 2007 - 2011 ) </p>
+                                <ul class="list-inline">
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-phone"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                  <div class="frontside">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <p><img class=" img-fluid" src="alumni/ANJAN BORA.jpg" alt="card image"></p>
+                              <h4 class="card-title">Anjan Bora</h4>
+                              <p class="card-text">Service Delivery Executive in Godrej and Boyce mfg co ltd.</p>
+                              <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="backside">
+                      <div class="card">
+                          <div class="card-body text-center mt-4">
+                              <h4 class="card-title">Profile</h4>
+                              <p class="card-text"> Branch : Mechanical Engineering ( 2013 - 2017) </p>
+                              <ul class="list-inline">
+                               
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="mailto:anjanbora99@yahoo.com">
+                                          <i class="fa fa-envelope"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="tel:9706384599">
+                                          <i class="fa fa-phone"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+                <div class="frontside">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p><img class=" img-fluid" src="alumni/ankit.jpg" alt="card image"></p>
+                            <h4 class="card-title">Ankit Khound</h4>
+                            <p class="card-text"> Branch : Mechanical Engineering ( 2013 - 2017) </p>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="backside">
+                    <div class="card">
+                        <div class="card-body text-center mt-4">
+                            <h4 class="card-title">Profile</h4>
+                            <p class="card-text"> Branch : Mechanical Engineering ( 2013 - 2017) </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                        <i class="fa fa-phone"></i>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+          <div class="mainflip">
+              <div class="frontside">
+                  <div class="card">
+                      <div class="card-body text-center">
+                          <p><img class=" img-fluid" src="alumni/Arnab Bordoloi.jpeg" alt="card image"></p>
+                          <h4 class="card-title"> Arnab Kishor Bordoloi </h4>
+                          <p class="card-text">Senior Electrical Engineer at OIL</p>
+                          <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="backside">
+                  <div class="card">
+                      <div class="card-body text-center mt-4">
+                          <h4 class="card-title">Profile</h4>
+                          <p class="card-text">Branch : Electrical Engineering ( 2014 - 2018)</p>
+                          <ul class="list-inline">
+                              <li class="list-inline-item">
+                                  <a class="social-icon text-xs-center" target="_blank" href="mailto:arnab.kishor.bordoloi@gmail.com">
+                                      <i class="fa fa-envelope"></i>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="social-icon text-xs-center" target="_blank" href="tel:8638758781">
+                                      <i class="fa fa-phone"></i>
+                                  </a>
+                              </li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="alumni/Faheemul Islam.jpg" alt="card image"></p>
+                        <h4 class="card-title"> Md Faheemul Islam</h4>
+                        <p class="card-text">Technical Development Engineer(Aero360 Dronix Technologies Pvt Ltd)</p>
+                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="backside">
+                <div class="card">
+                    <div class="card-body text-center mt-4">
+                        <h4 class="card-title">Profile</h4>
+                        <p class="card-text">Branch : Mechanical Engineering ( 2014 - 2018)</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="mailto:faheemulofficial1995@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="tel:9859312394">
+                                    <i class="fa fa-phone"></i>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="alumni/dibyajyoti.jpg" alt="card image"></p>
+                      <h4 class="card-title">Dibyajyoti Chatterjee</h4>
+                      <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Profile</h4>
+                      <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                      <ul class="list-inline">
+                          
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="mailto:dibyajyoti.dc@gmail.com">
+                                  <i class="fa fa-envelope"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="tel:9957298640">
+                                  <i class="fa fa-phone"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="alumni/digboloy.jpg" alt="card image"></p>
+                      <h4 class="card-title">Digboloy Borah</h4>
+                      <p class="card-text">Branch : Mechanical Engineering ( 2016 - 2020)</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Profile</h4>
+                      <p class="card-text">Branch : Mechanical Engineering ( 2016 - 2020)</p>
+                      <ul class="list-inline">
+                         
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="mailto:borahdigboloy@gmail.com">
+                                  <i class="fa fa-envelope"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="tel:6002121008">
+                                  <i class="fa fa-phone"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="alumni/pooja.jpg" alt="card image"></p>
+                      <h4 class="card-title">Pooja Rani Borah</h4>
+                      <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Profile</h4>
+                      <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                      <ul class="list-inline">
+                        
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="mailto:poojaraniborah@gmail.com">
+                                  <i class="fa fa-envelope"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="tel:8812058804">
+                                  <i class="fa fa-phone"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+            <!-- ./Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/mayurdeep.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Mayurdeep Pathak</h4>
+                                    <p class="card-text">Branch : Computer Science Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Computer Science Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:mayurdeeppathak@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:8812073271">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/ross.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Rose Bori</h4>
+                                    <p class="card-text">Branch : Mechanical Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Mechanical Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:rossbori.jec@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:8753939711">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/anshuman.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Anshuman Baruah</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                       
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:anshumandadly@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:8753994280">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/prastuti.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Prastuti Deka</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:prastutideka1997@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:8811900411">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/namrata.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Namrata Nayana Borah</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:namratattb@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:7086128873">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="alumni/preeyanka.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Priyanka Devi</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Profile</h4>
+                                    <p class="card-text">Branch : Electrical Engineering ( 2016 - 2020)</p>
+                                    <ul class="list-inline">
+                                    
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="mailto:devipriyanka685@gmail.com">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="tel:7086572951">
+                                                <i class="fa fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</section>
+<!-- Team -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Official site of RoboWorld - Jorhat Engineering College robotics club" />
+    <meta name="keywords" content="roboworld, jec, robotics, assam, jorhat, engineering, college, phoenix, robo, club" />
+    <meta name="author" content="Balarka Goswami" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>JEC ROBOWORLD</title>
+    <link href="band.css" rel="stylesheet">
+    <link href="bala.css" rel="stylesheet">
+    <link href="hely.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+     <!-- <script type="text/javascript">
+        function codeAddress(){
+          history.replaceState({}, 'JEC-RoboWorld', 'http://jecroboworld.in');
+          alert("ok");
+        }
+
+      </script> -->
+    <style>
+   
+
+      .more {display: none;}
+     
+
+      .ab{
+        padding:1%;
+        
+        
+       
+      }
+      .hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+     
+      .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.hvr-sweep-to-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active {
+  color: black;
+}
+.hvr-sweep-to-left:hover:before, .hvr-sweep-to-left:focus:before, .hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+      .andy{
+        color:black;
+        font-family: 'Open Sans', sans-serif!important;
+      }
+      .handy{
+        height:80%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      }
+      @media (min-width: 768px) {
+        
+         .ab{
+           padding: 5%;
+           height:60%;
+         }
+         .boxy{
+           text-align: justify;
+         }
+        
+        }
+      .boxy{
+       text-align: justify;
+      }
+      .havy{
+        background-color: #81d4fa;
+        padding: 2%;
+        border-radius: 20%;
+        font-weight:bold ;
+      }
+      .adan{
+        text-align: center;
+        border-radius: 50%;
+      }
+      .hello{
+        background-color:white;
+        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      }
+      
+      .ft{
+  font-family: 'Open Sans', sans-serif!important;
+  
+}
+      
+.hello{
+        background-color:white;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      }
+  
+}
+.btr {
+  background-color: #81d4fa !important;
+ 
+}
+.but{
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+.text-block {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  background-color:  black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .text-block {
+  position: relative;
+  top: 75%;
+  left: 50%;
+  background-color:  black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: smaller;
+}
+}
+.arrow {
+  text-align: center;
+  margin-top: 0% ;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.btn-grad{
+  color: green;
+  font-weight: 500;
+
+}
+.btn-grad:hover{
+  color: white!important;
+font-weight: 300;
+  background-color: green!important;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .arrow {
+  text-align: center;
+  margin: 6% ;
+ 
+  
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+}
+    </style>
+     
+  </head>
+  
+  <body >
+    
+    
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="ab.html">
+        
+          <img src="download.jpg" width="50" height="50" class="d-inline-block align-center" alt="logo">
+         <span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span>
+       
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pl-2 pr-2">
+          <li class="nav-item active">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="ab.html"><i class="fas fa-home "></i> HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="tutorial.html"><i class="fas fa-graduation-cap"></i> TUTORIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="foundation.html"><i class="fas fa-history"></i> History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="compact-gallery.html"><i class="fas fa-picture-o"></i> IMAGE GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white p-2 axz hvr-underline-from-center" href="alumni.html"><i class="fas fa-users"></i> Alumni</a>
+          </li>
+        </ul>
+        
+      </div>
+      
+    </nav>
+
+    <div class="site-wrapper hio">
+      
+     
+      <div class="site-wrapper-inner">
+      
+        <div class="fluid-container">
+
+         
+
+          <div class="inner cover az " data-aos="fade-up"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
+            <h1 class="cover-heading display-4"><span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span></h1>
+            <h3 class="lead"> Robotics Club of Jorhat Engineering College </h3>
+            <p class="lead">
+              <a href="https://forms.gle/TXdjoo7nUbRvkD4K8" class="btn  btn-lg btn-default btn-rounded btn-outline-dark btn hvr-sweep-to-left hvr-grow" data-toggle="tooltip" data-placement="bottom" title="New Club Members Registration"  target="_blank"><i class="fas fa-registered"></i> REGISTRATION</a>
+            </p>
+            <div class="share-button ">
+              <span ><i class="fas fa-share-alt"></i> Follow Us</span>
+              <a href="https://www.facebook.com/jecroboworld/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/channel/UC0118G6CXLW_O4NdBaLoB4Q/featured?disable_polymer=1" target="_blank"><i class="fab fa-youtube-square"></i></a>
+              <a href="https://instagram.com/roboworld_jec?igshid=5pylubm49ll8" target="_blank"><i class="fab fa-instagram"></i></a>
+             
+            </div>
+         <p class="arrow bounce">
+            <i class="fa fa-arrow-down fa-2x"></i>
+          </p>
+          </div>
+          </div>
+
+          
+            
+        
+      </div>
+      
+    </div>
+
+  <hr>
+  
+  <!--Timeline-->
+  <div class="container">
+    <h1 class="text-center display-4"><b>OUR TIMELINE</b></h1>
+    <!--card-->
+  </div>
+    <!---timeline-->
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 ">
+              <div class="main-timeline text-center">
+                  <div class="timeline">
+                      <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                      <span class="year">NOV 2019</span>
+                      <div class="timeline-content">
+                          <h3 class="title text-center">Technovus</h3>
+                          <p class="description">
+                           Technovus is the techinal fest competition of Jorhat Engineering college. It is Organised for the first time in the college . Jec Roboworld organised 10 competitons in this technical fest 
+                          </p>
+                          <div class="adan">
+                          <img src="image/images.jpg" class="border-radius:12%" width="80%" height="50%">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="timeline ">
+                      <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                      <span class="year">MAR 2019</span>
+                      <div class="timeline-content text-center">
+                          <h3 class="title">Phoenix</h3>
+                          <p class="description">
+                            Jec Roboworld, along with Phoenix coordinators, organised technosphere'19. This year, students from all over NE participated in 8 different events.
+                          </p>
+                          <div class="adan">
+                            <img src="timeline/technosphere_19.jpg" width="100%" height="50%">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="timeline">
+                      <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                      <span class="year">APR 2019</span>
+                      <div class="timeline-content">
+                          <h3 class="title">Smart India Hackathon</h3>
+                          <p class="description">
+                            Team of 8 (6 students + 2 mentors) went to Smart India Hackathon '19 (Software edition) at Jaipur Nodal Centre (organised by MHRD). The team developed a "Realtime power outage detection and analysis" system. They were among the top 4 teams under Ministry of Power .
+                          </p>
+                          <div class="adan">
+                            <img src="timeline/sih.jpg" width="100%" height="50%">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="timeline">
+                    <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                    <span class="year">JAN 2019</span>
+                    <div class="timeline-content text-center">
+                        <h3 class="title">TECHFEST IIT BOMBAY</h3>
+                        <p class="description">
+                            The roboworld team of 3 members went to Techfest- IITB, and came 2nd in both "Bel - Ideate to Innovate" and "Tata Power Future Think".
+                        </p>
+                        <div class="adan">
+                          <img src="timeline/techfest.jpg" width="100%" height="50%">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                    <span class="year">2019</span>
+                    <div class="timeline-content">
+                        <h3 class="title">ASME HPV</h3>
+                        <p class="description">
+                            Three members of JEC Roboworld, Digboloy Borah, Ashutosh Das,Bhrigu Ranjan Phukon, won the best perseverance award in Human Powered Vehicle Competition in Asia-Pacific zone organized by American Society of Mechanical Engineers in Vellore. This is the first participating team from JEC Roboworld and among the two teams from Assam selected in top 40 for participation.
+                        </p>
+                        <div class="adan">
+                          <img src="timeline/asme.jpg" width="100%" height="50%">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                  <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                  <span class="year">2018</span>
+                  <div class="timeline-content text-center">
+                      <h3 class="title">Farewell</h3>
+                      <p class="description">
+                        Ever since the inception of the club, roboworld is blessed with two very talented people - Arnab Bordoloi and Faheemul Islam. RoboWorld family thanks them for their leadership and guidance. Though they have now graduated from this college, they continue to be a part of RoboWorld as alumni members.
+
+
+                 </p>
+                      <div class="adan">
+                        <img src="timeline/parting-2018.jpg" width="100%" height="50%">
+                      </div>
+                  </div>
+              </div>
+              <div class="timeline">
+                <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+                <span class="year">2018</span>
+                <div class="timeline-content">
+                    <h3 class="title">Technospere</h3>
+                    <p class="description">
+                        As part of technosphere - Phoenix, Roboworld organises several robotics competiton every year under AUTOMATA. Participants from all over north-east compete for glory.
+                    </p>
+                    <div class="adan">
+                      <img src="timeline/automata.jpg" width="100%" height="50%">
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+              <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+              <span class="year">SEP 2017</span>
+              <div class="timeline-content text-center">
+                  <h3 class="title">Webinar</h3>
+                  <p class="description">
+                    On the occasion of Engineers' Day, Webinar Series was organised in Jorhat Engineering College in association with RoboWorld. RoboWorld thanks the Speakers Dr. Nayan Moni Kakoty and Eashan Saikia for their time and valuable words.
+                  </p>
+                  <div class="adan">
+                    <img src="timeline/engineers_day.jpg" width="100%" height="50%">
+                  </div>
+              </div>
+          </div>
+          <div class="timeline">
+            <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+            <span class="year">MAR 2017</span>
+            <div class="timeline-content">
+                <h3 class="title"> Drone Workshop</h3>
+                <p class="description">
+                    In collaboration with Edurade organised a workshop on Delivery Drones and "Embedded Systems and Robotics".
+
+
+                </p>
+                <div class="adan">
+                  <img src="timeline/drone_workshop.jpg" width="100%" height="50%">
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+          <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+          <span class="year">FEB 2017</span>
+          <div class="timeline-content text-center">
+              <h3 class="title">Inauguration</h3>
+              <p class="description">
+                After much struggle to build a place for the students to work on their technical hobbies, Anjan Bora (technical secratary at the time) and other members along with Prof. Diganta Kalita sir's effort, the hobby centre was inaugurated. Due to security concerns, in May 2018, it has been renamed to Robo Centre on Principal Ma'am's approval. It is managed by the senior members of the club.
+              </p>
+              <div class="adan">
+                <img src="timeline/hobby_center.jpg" width="100%" height="50%">
+              </div>
+          </div>
+      </div>
+      <div class="timeline">
+        <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+        <span class="year">2016</span>
+        <div class="timeline-content">
+            <h3 class="title">Revive of Club</h3>
+            <p class="description">
+                It was the year of 2016 when Roboclub was resurrected by the whole hearted effort of Ankit Khound and his team. He along with his teammates went to JIST (Jorhat Institute of Science and technology) to participate in robotic competitions held there. this was one of the first steps towards making the club, as back then there was no club and the team had to make their bots in rooms. Mr. Ankit khound’s team got inspired by robotics clubs of other colleges and the work they were involved in. And this was when the foundation of the club was laid again. The name ‘ROBOCLUB’ was picked as a souvenir to the seniors who first initiated the club in 2010. Two teachers who helped the most during establishment of the club were Dhrupad Sarma sir and Dharindam Sonowal sir. The whole plans, procedure, rules of the club was the brain child of this team. Later in 2016, two teams from the club went to IIT, GHY to participate after the club was resurrected again. And was followed by participations in AUXESIS and TECHXETRA that very year.
+           
+               
+          
+        </div>
+    </div>
+    <div class="timeline">
+      <span class="timeline-icon"> <i class="fas fa-cog fa-spin"></i></span>
+      <span class="year">2010</span>
+      <div class="timeline-content text-center">
+          <h3 class="title">Foundation</h3>
+          <p class="description pb-1">
+            Till 'PHOENIX 2010  Jorhat Engineering College  didn't have any official Club for  sharing Robots building ideas or methodology . Robotics events were then a part of PHOENIX scheduled.  So to make more students aware of  Robotics or Robot making ideas , the Club "JEC ROBOWORLD" was Officially formed on 31st March 2011.
+            The Club "JEC ROBOWORLD" was a fruit of extreme hardwork of The TTI  "Team of Talented Individuals".  It was a dream that was executed into reality .
+            
+            
+          </p>
+          <div class="adan">
+            <img src="image/ORGANIZERS.jpg" width="100%" height="50%">
+          </div>
+      </div>
+  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <hr>
+  <!--image slider-->
+
+<!--Carousel Wrapper-->
+<div class=" text-center display-4 ft">
+  OUR PROJECTS
+</div>
+<div class="container">
+<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+  <!--Slides-->
+  <div class="carousel-inner " role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block w-100 ab mh-70 img-fluid image" src="image/37229567_1772792396138768_1393937142064873472_n.jpg"
+        alt="First slide">
+        <div class="text-block">
+          
+          <h4>AIR Conference IIT Delhi</h4>
+        </div>
+        
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/IMG_20181214_132601.jpg"
+        alt="Second slide">
+        <div class="text-block">
+         
+          <h4>TechFest IIT Bombay</h4>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/IMG_20190203_173719.jpg"
+        alt="Third slide">
+        <div class="text-block">
+          
+          <h4>ASME 2019 HPVC</h4>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/IMG_20180317_175919.jpg"
+        alt="Second slide">
+        <div class="text-block">
+         
+          <h4>technosphere 2018 Moment</h4>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/cleaner robot.jpg"
+        alt="Second slide">
+        <div class="text-block">
+         
+          <h4>cleaner robot</h4>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/WhatsApp Image 2019-03-25 at 6.52.46 PM.jpeg"
+        alt="Second slide">
+        <div class="text-block">
+         
+          <h4>SUPERNERD(GU & CIT) Moment</h4>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 ab" src="image/sih.jpg"
+        alt="Second slide">
+        <div class="text-block">
+         
+          <h4>Smart India Hackathon 2019</h4>
+        </div>
+    </div>
+  </div>
+
+  <!--/.Slides-->
+  <!--Controls-->
+  
+  <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+      <img src="image/37229567_1772792396138768_1393937142064873472_n.jpg" width="100">
+     
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="1">
+      <img src="image/IMG_20181214_132601.jpg" width="100">
+      
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="2">
+      <img src="image/IMG_20190203_173719.jpg" width="100">
+     
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="2">
+      <img src="image/IMG_20180317_175919.jpg" width="100">
+     
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="2">
+      <img src="image/cleaner robot.jpg" width="100">
+     
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="2">
+      <img src="image/WhatsApp Image 2019-03-25 at 6.52.46 PM.jpeg" width="100">
+     
+    </li>
+    <li data-target="#carousel-thumb" data-slide-to="2">
+      <img src="image/sih.jpg" width="100">
+     
+    </li>
+  </ol>
+</div>
+</div>
+<!--/.Carousel Wrapper-->
+
+    <!--Achievement-->
+    <div class="text-center display-4 ft">
+        ACHIEVEMENTS
+        <!--card-->
+      </div>
+      <br>
+      <br>
+
+     
+          
+    <div class="container ft" >
+      
+        <div class="row">
+          <div class="col-6 s12 m5 overflow-hidden" data-aos="fade-right"
+          data-aos-offset="300"  data-aos-duration="800"
+          data-aos-easing="ease-in-sine">
+            <h5>Smart India Hackathon 19- Software edition, organised by MHRD</h5>
+            <h6>Came among the top 4 teams under Ministry of Power</h6>
+            <p>The team of 8 developed a "Real time power outage detection and analysis" system.</p>
+            <h5>"Bel -Ideate to innovate" organised by IIT Bombay - 2018</h5>
+            <h6>2nd Prize</h6>
+            <p>Inter Asia competion, secured 2nd prize among top 10 teams.</p>
+            <h5>Human powered vehicle competition- by ASME 2018</h5>
+            <h6>Best preseverance award</h6>
+            <p>Won the best preseverance award in Human Powered Vehicle Competetion in Asia-Pacific zone organised by American Society of mechanical engineers, held in VIT.</p>
+            <h5>Death race(rally competition) - Techxetra ‘16</h5>
+            <h6>1st place</h6>
+            <p>In Robotics competition organised by Tezpur University.</p>
+            <h5>Robowar,SUPERNERDS, 2019</h5>
+            <h6>2nd Prize</h6>
+            <p>SUPERNERDS was oganised by Guwahati University in collaboration with CIT.</p>
+            <h5>Robosoccer - Pyrokinesis ‘18</h5>
+            <h6>1st place</h6>
+            <p>In Robotics competition organised by AEC</p>
+            <h5>Amphibian Bot - Auxesis ‘16</h5>
+            <h6>2nd Prize</h6>
+            <p>In Robotics competition organised by Dibrugarh University.</p>
+            <h5>Roboteaser - Pyrokinesis '20</h5>
+            <h6>2nd Prize <span class="badge badge-pill badge-success"> Latest</span></h6>
+            <p>In Robotics competition organised by AEC</p>
+            <h5>Robowar - Technovus '19</h5>
+            <h6>2nd Prize <span class="badge badge-pill badge-success"> Latest</span></h6>
+            <p>In Robotics competition organised by JEC </p>
+          </div>
+          <div class="col-6 s12 m5 overflow-hidden  ft" data-aos="fade-left"
+          data-aos-offset="300"  data-aos-duration=800"
+          data-aos-easing="ease-in-sine">
+            <h5>DRDO Robotics and Unmanned Systems Exposition-2018</h5>
+            <h6>1st place</h6>
+            <p>North East Zonal Level Exposition and Qualifiers for National Level Exposition on the event of DRDO Robotics and Unmanned Systems Exposition-2018</p>
+            <h5>"Tata Power Future think" organised by IIT Bombay - 2018</h5>
+            <h6>2nd Prize</h6>
+            <p>Competion organised by IIT Bombay where problem statement is given on the spot.</p>
+            <h5>Techkriti organised by IIT Kanpur - 2019</h5>
+            
+            <p>Showcased out model on "Gesture based bomb defusing UAV"</p>
+            <h5>Survival Bot - Auxesis ‘16</h5>
+            <h6>1st placee</h6>
+            <p>In Robotics competition organised by Dibrugarh University.</p>
+            <h5>Robosoccer - Techxetra ‘16</h5>
+            <h6>2nd Prize</h6>
+            <p>In Robotics competition organised by Tezpur University.</p>
+            <h5>Robosoccer - Abeyantrix ‘18</h5>
+            <h6>1st place</h6>
+            <p>In Robotics competition organised by JIST.</p>
+            <h5>Robowar - Pyrokinesis ‘18</h5>
+            <h6>2nd Prize</h6>
+            <p>In Robotics competition organised by AEC.</p>
+            <h5>Robosoccer - Technosis '20</h5>
+            <h6>2nd Prize <span class="badge badge-pill badge-success"> Latest</span></h6>
+            <p>In Robotics competition organised by NIT Silchar.</p>
+            <h5>B-plan idea - Meity tide 2.0 '20</h5>
+            <h6>2nd Prize <span class="badge badge-pill badge-success"> Latest</span></h6>
+            <p>In B-plan idea competition organised by Tezpur University.</p>
+          </div>
+        </div>
+      </div>
+      
+      <hr size="30">
+      <marquee width="100%"direction="left" style="color:red">
+        NOTICE : New Webiner will be Coming Soon 
+    </marquee>
+      <!--cards-->
+      <div class="text-center display-4 heelo">
+       <b>OUR EVENTS</b> 
+      </div>
+      <br>
+      <br>
+      <div class="container " >
+        <div class="row ">
+          <div class="col-12 col-sm-6 col-lg-4 " data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center  ">
+              <div class="card-body bg-white text-dark ">
+                <h4 class="card-title ">Club Induction meeting</h4>
+                
+                <p class="card-text">Club Induction meeting is organized every year in month of August for new members. </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center ">
+              <div class="card-body bg-dark text-white">
+                <h4 class="card-title">Technovus</h4>
+               
+                <p class="card-text">Organized Technovus in November , The technical fest of Jorhat Engineering College</p>
+               
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center  ">
+              <div class="card-body bg-white text-dark">
+                <h4 class="card-title">Worksops during College Induction Programme</h4>
+                
+                <p class="card-text">Conducted a workshop on the basics of Arduino and motor controlling with it, both wired and wireless as a part of the Induction Program under AICTE/TEQIP. </p>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center  ">
+              <div class="card-body bg-dark text-white ">
+                <h4 class="card-title">BYOT - Bring Your Own Technology</h4>
+                
+                <p class="card-text">Intra JEC competition for 1st year students in which they have to present their unique ideas, and winning projects are made under roboworld.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center ">
+              <div class="card-body bg-white text-dark ">
+                <h4 class="card-title">Weekly tutorial programs</h4>
+                
+                <p class="card-text">Guidance to get acquainted with various robotic platforms from the senior members.</p>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-lg-4 " data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <div class="card hello text-center ">
+              <div class="card-body bg-dark text-white">
+                <h4 class="card-title">Webinar series on Enginers Day,2017</h4>
+                
+                <p class="card-text">On the occasion of Engineers' Day (2017), Webinar Series was organised in Jorhat Engineering College in association with Roboworld</p>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <hr size="40">
+      <div class="text-center display-4 heelo">
+        <b>OUR TEAMS</b> 
+       </div>
+       <br>
+       <br>
+       <div class="container text-center">
+        <button type="button" class="btn-lg btn-grad btn-outline-success bg-white align-center "  onclick="location.href='./about_us/about.html';">Meet the amazing team behind JEC RoboWorld</button>
+      </div>
+      <br>
+      <br>
+ 
+   
+      <hr>
+      
+      <div class="text-center display-4 heelo m-3">
+        <b>Contact Us</b> 
+       </div>
+<div class="container">
+  <div class="row d-flex justify-content-around">
+    <div class="col-12 col-sm-6 col-md-4 ">
+      <div class="our-team hello">
+        <div class="picture">
+          <img class="img-fluid" src="members/Ashutosh1.jpg">
+        </div>
+        <div class="team-content">
+          <span class="badge badge-dark">Exeutive Member</span>
+          <h3 class="name">Ashutosh Das</h3>
+          <h4 class="title">Mechanical</h4>
+        </div>
+        <ul class="social">
+          <li><a href="mailto:das.ashutosh130@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+       <li><a href="tel:9957574213" class="fa fa-phone" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+      <div class="our-team hello">
+        <div class="picture">
+          <img class="img-fluid" src="members/balarka.jpg">
+        </div>
+        <div class="team-content">
+          <span class="badge badge-dark">Exeutive Member</span>
+          <h3 class="name">Balarka Goswami</h3>
+          <h4 class="title">Computer Science</h4>
+        </div>
+        <ul class="social">
+        
+          <li><a href="mailto:balarka135@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+          <li><a href="tel:7002106145" class="fa fa-phone" aria-hidden="true"></a></li>
+      
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+      <div class="our-team hello">
+        <div class="picture">
+          <img class="img-fluid" src="members/jinmoy.jpeg">
+        </div>
+        <div class="team-content">
+          <span class="badge badge-dark">Exeutive Member</span>
+          <h3 class="name">Jinmoy Jit Talukdar</h3>
+          <h4 class="title">Mechanical</h4>
+        </div>
+        <ul class="social">
+       \<li><a href="mailto:jinmoytalukdar336@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+       <li><a href="tel:7086931900" class="fa fa-phone" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+      <div class="our-team hello">
+        <div class="picture">
+          <img class="img-fluid" src="members/maharnab.jpg">
+        </div>
+        <div class="team-content">
+          <span class="badge badge-dark">Exeutive Member</span>
+          <h3 class="name">Maharnab Nath</h3>
+          <h4 class="title">Electrical</h4>
+        </div>
+        <ul class="social">
+          <li><a href="mailto:Nathmaharnab01@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+          <li><a href="tel:8134074367" class="fa fa-phone" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 justify-content-center">
+      <div class="our-team hello">
+        <div class="picture">
+          <img class="img-fluid" src="members/kinku das.png">
+        </div>
+        <div class="team-content">
+          <span class="badge badge-dark">Exeutive Member</span>
+          <h3 class="name">Kinku Das</h3>
+          <h4 class="title">Mechanical</h4>
+        </div>
+        <ul class="social">
+          <li><a href="mailto:kinkudas9@gmail.com" class="fa fa-envelope" aria-hidden="true"></a></li>
+          <li><a href="tel:7002274069" class="fa fa-phone" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+     
+    
+      <!--footer-->
+      <!-- Footer -->
+<footer class="page-footer font-small sda pt-4 ft">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto ">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 aver"><span style="color:#ffffff";>JEC ROBO<span style="color:yellow";>WORLD</span></span></h5>
+        <p class="aver">Jorhat Engineering College</p>
+        <p class="aver">P.O - Garmur</p>
+        <p class="aver">Pin - 785007</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto ">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 aver boxy">BUILD IT</h5>
+
+        <ul class=" sda list-unstyled \">
+          
+          <li>
+            <a class="aver" href="#!">HOME</a>
+          </li>
+          <li>
+            <a class="aver" href="#!">OUR PROJECTS</a>
+          </li>
+          <li>
+            <a class="aver" href="#!">ACHIEVEMENTS</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 aver boxy">ABOUT US</h5>
+
+        <ul class="list-unstyled sda">
+         
+          <li>
+            <a class="aver" href="#!">TIMELINE</a>
+          </li>
+          <li>
+            <a class="aver" href="#!">OUR EVENTS</a>
+          </li>
+          <li>
+            <a class="aver" href="#!">THE TEAM</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto aver">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 aver boxy">INFO-BROUCHER</h5>
+
+        <ul class="list-unstyled sda">
+         
+          <li>
+            <a class="aver" href="#!">TECHNOVUS</a>
+          </li>
+          <li>
+            <a class="aver" href="#!">NEW REGISTRATION </a>
+          </li>
+          <li>
+            <a class="aver" href="#!">CONTACT US</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1 aver">Contact club</h5>
+    </li>
+ 
+  
+
+    <li class="list-inline-item text-center">
+      <a href="https://forms.gle/wgS4ja6sgofYBobr6" class="btn btn-success btn-rounded but hvr-float "  target="_blank" ><i class="fas fa-envelope"></i> Contact Club</a>
+    </li>
+
+  </ul>
+ 
+  <!-- Call to action -->
+
+  
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 aver hmn">© 2020 Copyright:
+    <a class="aver" href="#"></a> Made by TEAM ROBOWORLD <large><i class="fas fa-heart "></i></large></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script src="js/materialize.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
